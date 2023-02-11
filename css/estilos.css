@@ -1,0 +1,57 @@
+body {
+  background-image: url(../img/shiny_foam.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; 
+
+}
+
+
+.main_titulo {
+  color: #0a3205;
+  font-size: 36px;
+  text-transform: uppercase; }
+
+h1 {
+  color: #0a3205;
+  font-size: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline; }
+
+.subtitulo-1 {
+  color: #0a3205;
+  font-size: 10px; }
+
+.subtitulo-2 {
+  color: #0a3205;
+  font-size: 20px; }
+
+.subtitulo-3 {
+  color: #0a3205;
+  font-size: 30px; }
+
+.subtitulo-4 {
+  color: #0a3205;
+  font-size: 40px; }
+
+.subtitulo-5 {
+  color: #0a3205;
+  font-size: 50px; }
+
+.btn--color1 {
+  color: black; }
+
+.btn--color2 {
+  color: #0a3205; }
+
+.btn--color3 {
+  color: #0a5005; }
+
+.fondo-transparente{
+  background-color: transparent;
+}
+
+.color-black{
+  color: black;
+}
+
