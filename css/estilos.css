@@ -42,10 +42,10 @@ h1 {
   color: black; }
 
 .btn--color2 {
-  color: #0a3205; }
+  color: black; background-color: lightgray; }
 
 .btn--color3 {
-  color: #0a5005; }
+  color: white; background-color: #0a5005; }
 
 .fondo-transparente{
   background-color: transparent;

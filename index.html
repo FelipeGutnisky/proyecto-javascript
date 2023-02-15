@@ -26,45 +26,34 @@
                     <img src = "img/logo_cutback-removebg-preview.png" alt = "site icon">
                     <span class = "text-uppercase fw-lighter ms-2 color-black">cutback</span>
                 </a>
-                <div class = "order-lg-2 nav-btns">
-                    <button type = "button" class = "btn position-relative">
-                        <i class = "fa fa-shopping-cart"></i>
-                        <span class = "position-absolute top-0 start-100 translate-middle badge bg-primary"></span>
-                    </button>
-                    <button type = "button" class = "btn position-relative">
-                        <i class = "fa fa-heart"></i>
-                        <span class = "position-absolute top-0 start-100 translate-middle badge bg-primary"></span>
-                    </button>
-                    <button type = "button" class = "btn position-relative">
-                        <i class = "fa fa-search"></i>
-                    </button>
-                </div>
-    
                 <button class = "navbar-toggler border-0" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navMenu">
                     <span class = "navbar-toggler-icon"></span>
                 </button>
+            <div class="container-fluid ms-5 ">
                 <div class = "collapse navbar-collapse order-lg-1 ms-5" id = "navMenu">
-                    <ul class = "navbar-nav me-auto mb-2 mb-lg-0 ms-5 text-center">
+                    <ul class = "navbar-nav me-auto mb-2 mb-lg-0 ms-5">
                         <li class = "nav-item px-2 py-2">
                             <a class = "nav-link text-uppercase text-dark" href = "index.html">INICIO</a>
                         </li>
                         <li class = "nav-item px-2 py-2">
-                            <a class = "nav-link text-uppercase text-dark" href="paginas/productos.html">MID LENGTH</a>
+                            <a class = "nav-link text-uppercase text-dark" href="paginas/productos.html">TABLAS</a>
                         </li>
                         <li class = "nav-item px-2 py-2">
-                            <a class = "nav-link text-uppercase text-dark" href = "paginas/productos.html">SINGLE FIN</a>
+                            <a class = "nav-link text-uppercase text-dark" href = "paginas/contacto.html">CONTACTO</a>
                         </li>
-                        <li class = "nav-item px-2 py-2">
-                            <a class = "nav-link text-uppercase text-dark" href = "paginas/productos.html">TWIN FIN</a>
+                        <li class="nav-item px-2 py-2">
+                            <button type = "button" class = "btn position-relative">
+                                <a id="botonCarrito" data-bs-toggle="modal" data-bs-target="#idModalCarrito"><i class = "fa fa-shopping-cart"></i></a>
+                                <span class = "position-absolute top-0 start-100 translate-middle badge bg-success">0</span>
+                            </button>
                         </li>
-                        <li class = "nav-item px-2 py-2">
-                            <a class = "nav-link text-uppercase text-dark" href = "paginas/productos.html">THRUSTER</a>
-                        </li>
-                        <li class = "nav-item px-2 py-2 border-0">
-                            <a class = "nav-link text-uppercase text-dark" href = "paginas/productos.html">CONTACTO</a>
-                        </li>
+                        <li class="nav-item px-2 py-2 ms-3">
+                            <form class="d-flex">
+                                <input id="buscador"class="form-control me-2" placeholder="Buscar Tabla" aria-label="Search">
+                                <button id="btnBuscar" class="btn btn-outline-success">Buscar</button>
+                            </form>
+                        </li>      
                     </ul>
-                
                 </div>
             </div>
         </nav>
@@ -102,17 +91,36 @@
             </div>
         </div>
     </div>
+    <!-- COMIENZA MODAL CARRITO -->
+    <div class="modal fade" id="idModalCarrito" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Carrito de Compras</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="modal-bodyCarrito">
+            <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer"> 
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" data-bs-dismiss="modal" class="btn btn-success" id="botonFinalizarCompra">Finalizar Compra</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- TERMINA MODAL CARRITO -->
     </main>
     <footer class="container-fluid bg-light border-top mt-5">
         <div class="row">
-        <div class="col  ">
-            <a class="enlace" href="#arriba"> Ir arriba </a>
+        <div class="col">
             <p>Desarrolado por: Felipe Gutnisky 2022</p>
         </div>
         </div>  
     
     </footer>
+    <script src="/JS/class.js"></script>
+    <script src="/JS/main.js"></script>   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="./js/index.js"></script>    
 </body>
 </html>

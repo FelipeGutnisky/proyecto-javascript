@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> PRODUCTOS | CUTBACK</title>
@@ -13,421 +13,157 @@
     <link rel="stylesheet" href="../css/estilos.css"/>
     <meta name="description" content="Descubre todo sobre los twin fins, sus caracteristicas, su historia y mas. ">
     <meta name="keywords" content=" twin fin, mark richards, historia del twin fin, tablas de surf, caracteristicas del twin fin"> 
-  </head>
-  <body>
+</head>
+<body>
     <header >
-      <nav class = "navbar navbar-expand-lg navbar-light bg-white">
-        <div class = "container">
-            <a class = "navbar-brand d-flex justify-content-between align-items-center order-lg-0" href = "../index.html">
-                <img src = "../img/logo_cutback-removebg-preview.png" alt = "site icon">
-                <span class = "text-uppercase fw-lighter ms-2 color-black">cutback</span>
-            </a>
-            <div class = "order-lg-2 nav-btns">
-              <button type = "button" class = "btn position-relative">
-                  <i class = "fa fa-shopping-cart"></i>
-                  <span class = "position-absolute top-0 start-100 translate-middle badge bg-primary"></span>
-              </button>
-              <button type = "button" class = "btn position-relative">
-                  <i class = "fa fa-heart"></i>
-                  <span class = "position-absolute top-0 start-100 translate-middle badge bg-primary"></span>
-              </button>
-              <button type = "button" class = "btn position-relative">
-                  <i class = "fa fa-search"></i>
-              </button>
-          </div>
-
-            <button class = "navbar-toggler border-0" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navMenu">
-                <span class = "navbar-toggler-icon"></span>
-            </button>
-            <div class = "collapse navbar-collapse order-lg-1 ms-5" id = "navMenu">
-                <ul class = "navbar-nav me-auto mb-2 mb-lg-0 ms-5">
-                    <li class = "nav-item px-2 py-2">
-                        <a class = "nav-link text-uppercase text-dark" href = "../index.html">INICIO</a>
-                    </li>
-                    <li class = "nav-item px-2 py-2">
-                        <a class = "nav-link text-uppercase text-dark" href = "productos.html">MID LENGTH</a>
-                    </li>
-                    <li class = "nav-item px-2 py-2">
-                        <a class = "nav-link text-uppercase text-dark" href = "productos.html">SINGLE FIN</a>
-                    </li>
-                    <li class = "nav-item px-2 py-2">
-                        <a class = "nav-link text-uppercase text-dark" href = "productos.html">TWIN FIN</a>
-                    </li>
-                    <li class = "nav-item px-2 py-2">
-                        <a class = "nav-link text-uppercase text-dark" href = "productos.html">THRUSTER</a>
-                    </li>
-                    <li class = "nav-item px-2 py-2 border-0">
-                        <a class = "nav-link text-uppercase text-dark" href = "productos.html">CONTACTO</a>
-                    </li>
-                </ul>
-            
+        <!-- NAVBAR COMIEZO -->
+        <nav class = "navbar navbar-expand-lg navbar-light bg-white">
+            <div class = "container">
+                <a class = "navbar-brand d-flex justify-content-between align-items-center order-lg-0" href = "../index.html">
+                    <img src = "../img/logo_cutback-removebg-preview.png" alt = "site icon">
+                    <span class = "text-uppercase fw-lighter ms-2 color-black">cutback</span>
+                </a>
+                <button class = "navbar-toggler border-0" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navMenu">
+                    <span class = "navbar-toggler-icon"></span>
+                </button>
+            <div class="container-fluid ms-5 ">
+                <div class = "collapse navbar-collapse order-lg-1 ms-5" id = "navMenu">
+                    <ul class = "navbar-nav me-auto mb-2 mb-lg-0 ms-5">
+                        <li class = "nav-item px-2 py-2">
+                            <a class = "nav-link text-uppercase text-dark" href = "../index.html">INICIO</a>
+                        </li>
+                        <li class = "nav-item px-2 py-2">
+                            <a class = "nav-link text-uppercase text-dark" href="productos.html">TABLAS</a>
+                        </li>
+                        <li class = "nav-item px-2 py-2">
+                            <a class = "nav-link text-uppercase text-dark" href = "contacto.html">CONTACTO</a>
+                        </li>
+                        <li class="nav-item px-2 py-2">
+                            <button type = "button" class = "btn position-relative">
+                                <a id="botonCarrito" data-bs-toggle="modal" data-bs-target="#idModalCarrito"><i class = "fa fa-shopping-cart"></i></a>
+                                <span class = "position-absolute top-0 start-100 translate-middle badge bg-success">0</span>
+                            </button>
+                        </li>
+                        <li class="nav-item px-2 py-2 ms-3">
+                            <form class="d-flex">
+                                <input id="buscador"class="form-control me-2" placeholder="Buscar Tabla" aria-label="Search">
+                                <button id="btnBuscar" class="btn btn-outline-success">Buscar</button>
+                            </form>
+                        </li>
+                        <li class="nav-item px-2 py-2 ms-5">
+                            <button id="agregarTabla" data-bs-toggle="modal" data-bs-target="#idModalAgregarTabla" class="btn btn-success">Agregar Tabla</button>
+                        </li>        
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
     </header>
     <hr>
     <main>
-      <section id = "productos" class = "py-5 bg-light">
-        <div class = "container-fluid">
-            <!-- <div class = "row g-0">
-                <div class = "d-flex flex-wrap justify-content-center mt-5 filter-button-group">
-                    <button type = "button" class = "btn m-2 text-dark active-filter-btn" data-filter = "*">All</button>
-                    <button type = "button" class = "btn m-2 text-dark" data-filter = ".best">Best Sellers</button>
-                    <button type = "button" class = "btn m-2 text-dark" data-filter = ".feat">Featured</button>
-                    <button type = "button" class = "btn m-2 text-dark" data-filter = ".new">New Arrival</button>
-                </div>
-            </div> -->
-            <div class = "collection-list mt-4 row gx-0 gy-3 d-flex justify-content-center">
-                <div class="col-md-6 col-lg-4 col-xl-3 p-2 feat" style="width: 18rem;">
-                    <div id="sunstone52" class="carousel slide">
-                        <div class="carousel-inner">
-                        <div class="carousel-item active">
-                          <img src="../img/twin-fins/album sunstone 5.2 (2).jpg" class="d-block w-100" alt="album sunstone 1">
+        <section  class = "py-5 bg-light">
+            <div  class = "container">
+                
+                <div class = "row d-flex ">
+                    <div class = "col d-flex justify-content-center align-items-center">
+                        <button type = "button" class = "btn m-2 text-dark active-filter-btn">Todos</button>
+                        <button type = "button" class = "btn m-2 text-dark">Nuevos Arribos</button>
+                        <div class="d-inline-flex ">
+                            <select id="selectOrden" class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                    <option selected >Precio:</option>
+                                    <option value="1">Mayor a menor</option>
+                                    <option value="2">Menor a mayor</option>
+                            </select>
+                        </div>    
+                        <div class="d-inline-flex ps-3">
+                            <select id="selectTipo" class="form-select form-select-sm"  aria-label=".form-select-sm example">
+                                <option selected>Tipo</option>
+                                <option value="1">Twin Fin</option>
+                                <option value="2">Mid Length</option>
+                                <option value="3">Single Fin</option>
+                                <option value="4">Thruster</option>
+                            </select>
                         </div>
-                        <div class="carousel-item">
-                          <img src="../img/twin-fins/album sunstone (3).jpg" class="d-block w-100" alt="album sunstone 2">
+                    </div>
+                </div>
+
+                <div id="tablasDeSurf" class = "collection-list mt-4 row gx-0 gy-3 d-flex justify-content-center"></div>
+            </div>
+        </section>
+        <!-- COMIEZA MODAL AGREGAR TABLA -->
+        <div class="modal fade" id="idModalAgregarTabla" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Agregar Tabla</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="modelo/marca" class="form-label">Modelo/Marca:</label>
+                            <input type="text" class="form-control" id="modeloInput" aria-describedby="Modelo">
                         </div>
-                        <div class="carousel-item">
-                          <img src="../img/twin-fins/album sunstone (4).webp" class="d-block w-100" alt="album sunstone 3">
+                        <div class="mb-3">
+                            <label for="tamaño" class="form-label">Tamaño:</label>
+                            <input type="text" class="form-control" id="autorInput" aria-describedby="autor">
                         </div>
-                      </div>
-                      <button class="carousel-control-prev" type="button" data-bs-target="#sunstone52" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                      </button>
-                      <button class="carousel-control-next" type="button" data-bs-target="#sunstone52" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                      </button>
-                    </div>
-                    <div class="d-flex align align-items-center ">
-                      <div class="text-center">
-                        <h2 class="fw-light subtitulo-2 mt-2 text-uppercase">Sunstone 5'2</h2>
-                        <p class="fw-bold">$500 USD</p>
-                      </div>
-                      <a href="#" class="ms-4"><button class="btn btn-primary btn-sm">Comprar</button></a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 col-xl-3 p-2 feat" style="width: 18rem;">
-                  <div id="darkness73" class="carousel slide">
-                      <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="../img/mid-length/darkness.webp" class="d-block w-100" alt="album darkness 7'3">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="../img/mid-length/darkness1.webp" class="d-block w-100" alt="album darkness 7'3">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="../img/mid-length/darkness2.webp" class="d-block w-100" alt="album darkness 7'3">
-                      </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#darkness73" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#darkness73" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
-                  <div class="d-flex align align-items-center ">
-                    <div class="text-center">
-                      <h2 class="fw-light subtitulo-2 mt-2 text-uppercase">Darkness 7'3</h2>
-                      <p class="fw-bold">$750 USD</p>
-                    </div>
-                    <a href="#" class="ms-4"><button class="btn btn-primary btn-sm">Comprar</button></a>
-                  </div>
-              </div>
-              <div class="col-md-6 col-lg-4 col-xl-3 p-2 feat" style="width: 18rem;">
-                <div id="lightmedina59" class="carousel slide">
-                    <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img src="../img/twin-fins/lightbender.jpg" class="d-block w-100" alt="Lighbender 6'2">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="../img/twin-fins/ligh.jpg" class="d-block w-100" alt="Lighbender 6'2">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="../img/twin-fins/lightbender2.jpg" class="d-block w-100" alt="Lighbender 6'2">
-                  </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#lightmedina59" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#lightmedina59" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
-                </div>
-                <div class="d-flex align align-items-center ">
-                  <div class="text-center">
-                    <h2 class="fw-light subtitulo-2 mt-2 text-uppercase">Lightbender 6'2</h2>
-                    <p class="fw-bold">$950 USD</p>
-                  </div>
-                  <a href="#" class="ms-4"><button class="btn btn-primary btn-sm"> Comprar</button></a>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">Precio en dolares ($USD)</span>
+                            <input id="precioImput" type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                            <span class="input-group-text">.00</span>
+                        </div>
+                        <div class="mb-3">
+                            <select id="selectquillas" class="form-select form-select-sm"  aria-label=".form-select-sm example">
+                                <option selected>Tipo</option>
+                                <option value="1">Twin Fin</option>
+                                <option value="2">Mid Length</option>
+                                <option value="3">Single Fin</option>
+                                <option value="4">Thruster</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <input type="file" class="form-control" id="subirImagen" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                            <button class="btn btn-outline-secondary" type="button" id="subirImagen">Cargar Imagen</button>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="text" id="guardarLibroBtn" class="btn btn-success" data-bs-dismiss="modal">Guardar Libro</button>
+                        </div>
+                    </form>
                 </div>
             </div>
-          </div>
-            <div class="col-md-6 col-lg-4 col-xl-3 p-2 feat" style="width: 18rem;">
-              <div id="tmedina59" class="carousel slide">
-                  <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="../img/twin-fins/twinsman.jpg" class="d-block w-100" alt="album twinsman 6'0">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../img/twin-fins/twinsman1.jpg" class="d-block w-100" alt="album twinsman 6'0">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../img/twin-fins/twinsman2.jpg" class="d-block w-100" alt="album twinsman 6'0">
-                  </div>
+            </div>
+        </div>
+        <!-- TERMINA MODAL AGREGAR LIBRO -->
+        <!-- COMIENZA MODAL CARRITO -->
+        <div class="modal fade" id="idModalCarrito" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Carrito de Compras</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#tmedina59" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#tmedina59" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-              <div class="d-flex align align-items-center ">
-                <div class="text-center">
-                  <h2 class="fw-light subtitulo-2 mt-2 text-uppercase">Twinsman 6'0</h2>
-                  <p class="fw-bold">$630 USD</p>
+                <div class="modal-body" id="modal-bodyCarrito">
+                <p>Modal body text goes here.</p>
                 </div>
-                <a href="#" class="ms-4"><button class="btn btn-primary btn-sm">Comprar</button></a>
-              </div>
-          </div>
-          <div class="col-md-6 col-lg-4 col-xl-3 p-2 feat" style="width: 18rem;">
-            <div id="medina59" class="carousel slide">
-                <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="../img/thruster/surfboards_Bandida.png" class="d-block w-100" alt="Cabianca Bandida 5'9">
+                <div class="modal-footer"> 
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" data-bs-dismiss="modal" class="btn btn-success" id="botonFinalizarCompra">Finalizar Compra</button>
                 </div>
-                <div class="carousel-item">
-                  <img src="../img/thruster/boards_Bandida_bottom.png" class="d-block w-100" alt="Cabianca Bandida 5'9">
                 </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#medina59" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#medina59" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-            <div class="d-flex align align-items-center ">
-              <div class="text-center">
-                <h2 class="fw-light subtitulo-2 mt-2 text-uppercase">Bandida 5'9 </h2>
-                <p class="fw-bold">$430 USD</p>
-              </div>
-              <a href="#" class="ms-4"><button class="btn btn-primary btn-sm">Comprar</button></a>
             </div>
         </div>
-        <div class="col-md-6 col-lg-4 col-xl-3 p-2 feat" style="width: 18rem;">
-          <div id="medina59" class="carousel slide">
-              <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="../img/thruster/Surfboards_TheMedina4.png" class="d-block w-100" alt="Cabianca The Medina 5'7">
-              </div>
-              <div class="carousel-item">
-                <img src="../img/thruster/boards_medina_n4.png" class="d-block w-100" alt="Cabianca The Medina 5'7">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#medina59" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#medina59" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-          <div class="d-flex align align-items-center ">
-            <div class="text-center">
-              <h2 class="fw-light subtitulo-2 mt-2 text-uppercase">The Medina 5'9</h2>
-              <p class="fw-bold">$475 USD</p>
-            </div>
-            <a href="#" class="ms-4"><button class="btn btn-primary btn-sm">Comprar</button></a>
-          </div>
-      </div>
-      <div class="col-md-6 col-lg-4 col-xl-3 p-2 feat" style="width: 18rem;">
-        <div id="thegame56" class="carousel slide">
-            <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="../img/thruster/surfboards_cabianca_TheGaMe.png" class="d-block w-100" alt="Cabianca The Game 5'6">
-            </div>
-            <div class="carousel-item">
-              <img src="../img/thruster/Surfboards_TheGAME.png" class="d-block w-100" alt="Cabianca The Game 5'6">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#thegame56" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#thegame56" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-        <div class="d-flex align align-items-center ">
-          <div class="text-center">
-            <h2 class="fw-light subtitulo-2 mt-2 text-uppercase">The Game 5'6</h2>
-            <p class="fw-bold">$480 USD</p>
-          </div>
-          <a href="#" class="ms-4"><button class="btn btn-primary btn-sm">Comprar</button></a>
-        </div>
-    </div>
-    <div class="col-md-6 col-lg-4 col-xl-3 p-2 feat" style="width: 18rem;">
-      <div id="stance90" class="carousel slide">
-          <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="../img/single-fins/single-fin.png" class="d-block w-100" alt="longboard stance 9'0">
-          </div>
-          <div class="carousel-item">
-            <img src="../img/single-fins/single-fin2.png" class="d-block w-100" alt="longboard stance 9'0">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#stance90" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#stance90" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-      <div class="d-flex align align-items-center ">
-        <div class="text-center">
-          <h2 class="fw-light subtitulo-2 mt-2 text-uppercase">Stance 9'0</h2>
-          <p class="fw-bold">$950 USD</p>
-        </div>
-        <a href="#" class="ms-4"><button class="btn btn-primary btn-sm">Comprar</button></a>
-      </div>
-  </div>
-  <div class="col-md-6 col-lg-4 col-xl-3 p-2 feat" style="width: 18rem;">
-    <div id="bigcontinental94" class="carousel slide">
-        <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="../img/single-fins/singlefin.png" class="d-block w-100" alt="BING CONTINENTAL 9'4">
-        </div>
-        <div class="carousel-item">
-          <img src="../img/single-fins/singlefin2.png" class="d-block w-100" alt="BING CONTINENTAL 9'4">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#bigcontinental94" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#bigcontinental94" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-    <div class="d-flex align align-items-center ">
-      <div class="text-center">
-        <h2 class="fw-light subtitulo-2 mt-2 text-uppercase">Bing Continental 9'4</h2>
-        <p class="fw-bold">$1000 USD</p>
-      </div>
-      <a href="#" class="ms-4"><button class="btn btn-primary btn-sm">Comprar</button></a>
-    </div>
-</div>
-<div class="col-md-6 col-lg-4 col-xl-3 p-2 feat" style="width: 18rem;">
-  <div id="sunday73" class="carousel slide">
-      <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="../img/mid-length/midfire.png" class="d-block w-100" alt="FIREWIRE SUNDAY 7'3">
-      </div>
-      <div class="carousel-item">
-        <img src="../img/mid-length/midfire2.png" class="d-block w-100" alt="FIREWIRE SUNDAY 7'3">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#sunday73" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#sunday73" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-  <div class="d-flex align align-items-center ">
-    <div class="text-center">
-      <h2 class="fw-light subtitulo-2 mt-2">FIREWIRE SUNDAY 7'3</h2>
-      <p class="fw-bold">$1100 USD</p>
-    </div>
-    <a href="#" class="ms-4"><button class="btn btn-primary btn-sm">Comprar</button></a>
-  </div>
-</div>
-<div class="col-md-6 col-lg-4 col-xl-3 p-2 feat" style="width: 18rem;">
-  <div id="bigcontinental96" class="carousel slide">
-      <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="../img/single-fins/bingcontinental.png" class="d-block w-100" alt="BING CONTINENTAL 9'6">
-      </div>
-      <div class="carousel-item">
-        <img src="../img/single-fins/bingcontinental2.png" class="d-block w-100" alt="BING CONTINENTAL 9'6">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#bigcontinental96" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#bigcontinental96" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-  <div class="d-flex align align-items-center ">
-    <div class="text-center">
-      <h2 class="fw-light subtitulo-2 mt-2">BING CONTINENTAL 9'6</h2>
-      <p class="fw-bold">$1250 USD</p>
-    </div>
-    <a href="#" class="ms-4"><button class="btn btn-primary btn-sm">Comprar</button></a>
-  </div>
-</div>
-<div class="col-md-6 col-lg-4 col-xl-3 p-2 feat" style="width: 18rem;">
-  <div id="m2366" class="carousel slide">
-      <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="../img/mid-length/midlength.png" class="d-block w-100" alt="CHANNEL ISLANDS M23 6'6">
-      </div>
-      <div class="carousel-item">
-        <img src="../img/mid-length/midlength2.png" class="d-block w-100" alt="CHANNEL ISLANDS M23 6'6">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#m2366" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#m2366" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-  <div class="d-flex align align-items-center ">
-    <div class="text-center">
-      <h2 class="fw-light subtitulo-2 mt-2 text-uppercase">CHANNEL ISLANDS M23 6'6</h2>
-      <p class="fw-bold">$975 USD</p>
-    </div>
-    <a href="#" class="ms-4"><button class="btn btn-primary btn-sm">Comprar</button></a>
-  </div>
-</div>
-              </div>
-          </div>
-    </section>    
+        <!-- TERMINA MODAL CARRITO -->    
     </main>
-    <hr>
     <footer class="container-fluid bg-light ">
-      <div class="row">
-        <div class="col ">
-          <a class="text-black" href="#arriba"> Ir arriba </a>
-        <p>Desarrolado por: Felipe Gutnisky 2022</p>
-      </div>
-      </div>  
-      
+        <div class="row">
+            <div class="col ">
+                <p>Desarrolado por: Felipe Gutnisky 2022</p>
+            </div>
+        </div>  
     </footer>
+    <script src="../JS/class.js"></script>
+    <script src="../JS/main.js"></script> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-  </body>
+</body>
 </html>
