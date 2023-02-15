@@ -65,8 +65,6 @@
                 
                 <div class = "row d-flex ">
                     <div class = "col d-flex justify-content-center align-items-center">
-                        <button type = "button" class = "btn m-2 text-dark active-filter-btn">Todos</button>
-                        <button type = "button" class = "btn m-2 text-dark">Nuevos Arribos</button>
                         <div class="d-inline-flex ">
                             <select id="selectOrden" class="form-select form-select-sm" aria-label=".form-select-sm example">
                                     <option selected >Precio:</option>
@@ -83,9 +81,11 @@
                                 <option value="4">Thruster</option>
                             </select>
                         </div>
+                        <div class="ps-3"><button id="verTablas" class="btn btn-success">Ver Catálogo</button></div>
+                        <div class="ps-3"><button id="ocultarTablas" class="btn btn-success">Ocultar Catálogo</button></div>
                     </div>
                 </div>
-
+                <div class="container"><div id="coincidencia"></div></div>
                 <div id="tablasDeSurf" class = "collection-list mt-4 row gx-0 gy-3 d-flex justify-content-center"></div>
             </div>
         </section>
@@ -105,7 +105,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="tamaño" class="form-label">Tamaño:</label>
-                            <input type="text" class="form-control" id="autorInput" aria-describedby="autor">
+                            <input type="text" class="form-control" id="tamanioInput" aria-describedby="Tamaño">
                         </div>
                         <div class="input-group mb-3">
                             <span class="input-group-text">Precio en dolares ($USD)</span>
@@ -113,21 +113,21 @@
                             <span class="input-group-text">.00</span>
                         </div>
                         <div class="mb-3">
-                            <select id="selectquillas" class="form-select form-select-sm"  aria-label=".form-select-sm example">
+                            <select id="selectQuillas" class="form-select form-select-sm"  aria-label=".form-select-sm example">
                                 <option selected>Tipo</option>
-                                <option value="1">Twin Fin</option>
-                                <option value="2">Mid Length</option>
-                                <option value="3">Single Fin</option>
-                                <option value="4">Thruster</option>
+                                <option value="TWIN FIN">Twin Fin</option>
+                                <option value="MID LENGTH">Mid Length</option>
+                                <option value="SINGLE FIN">Single Fin</option>
+                                <option value="THRUSTER">Thruster</option>
                             </select>
                         </div>
                         <div class="input-group">
                             <input type="file" class="form-control" id="subirImagen" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
-                            <button class="btn btn-outline-secondary" type="button" id="subirImagen">Cargar Imagen</button>
+                            <button class="btn btn-outline-secondary" type="button">Cargar Imagen</button>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                            <button type="text" id="guardarLibroBtn" class="btn btn-success" data-bs-dismiss="modal">Guardar Libro</button>
+                            <button type="text" id="guardarTablaBtn" class="btn btn-success" data-bs-dismiss="modal">Guardar Tabla</button>
                         </div>
                     </form>
                 </div>
@@ -143,8 +143,7 @@
                     <h5 class="modal-title" id="exampleModalLabel">Carrito de Compras</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body" id="modal-bodyCarrito">
-                <p>Modal body text goes here.</p>
+                <div class="modal-body" id="modalBodyCarrito">
                 </div>
                 <div class="modal-footer"> 
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>

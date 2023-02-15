@@ -3,9 +3,9 @@ class tablas{
     constructor(id,modelo,largo,precio, tipo,imagen1,imagen2,imagen3){
         this.id = id
         this.modelo = modelo.toUpperCase()
-        this.largo = parseInt(largo)
+        this.largo = largo
         this.precio = parseInt(precio)
-        this.tipo = tipo
+        this.tipo = tipo.toUpperCase()
         this.imagen1 = imagen1
         this.imagen2 = imagen2
         this.imagen3 = imagen3
@@ -25,7 +25,6 @@ const tabla10 = new tablas("10","firewire sunday","7'3",1100,"mid length","../im
 const tabla11 = new tablas("11","big continental","9'6",1250,"single fin","../img/single-fins/bingcontinental.png","../img/single-fins/bingcontinental2.png","")
 const tabla12 = new tablas("12","channel islands m23","6'6",975,"mid length","../img/mid-length/midlength.png","../img/mid-length/midlength2.png","")
 
-/* const productos = [tabla1,tabla2,tabla3,tabla4,tabla5,tabla6,tabla7,tabla8,tabla9,tabla10,tabla11,tabla12] */
 
 //array de objetos:
 let productos = []

@@ -47,12 +47,12 @@
                                 <span class = "position-absolute top-0 start-100 translate-middle badge bg-success">0</span>
                             </button>
                         </li>
-                        <li class="nav-item px-2 py-2 ms-3">
+                        <!-- <li class="nav-item px-2 py-2 ms-3">
                             <form class="d-flex">
                                 <input id="buscador"class="form-control me-2" placeholder="Buscar Tabla" aria-label="Search">
                                 <button id="btnBuscar" class="btn btn-outline-success">Buscar</button>
                             </form>
-                        </li>      
+                        </li>     -->  
                     </ul>
                 </div>
             </div>
@@ -73,21 +73,21 @@
                 <h2 class="main_titulo"> single fin</h2>
                 <img src="img/singlefin-quilla.jpg" class="img-fluid " alt=" single fin"/>
                 <p class="main_parrafo"> Un acercamiento al surf clasico </p>
-                <a href="paginas/productos.html"><button type="button" class="btn btn-danger mt-4">Comprar</button></a>      
+                <a href="paginas/productos.html"><button id="singleFinButton" type="button" class="btn btn-danger mt-4">Comprar</button></a>      
             </div>
             <div class="col-md-3 bg-light d-flex flex-column align-items-center p-3 ">
             <!-- thruster-->
                 <h2 class="main_titulo">thruster</h2>
                 <img src="img/lost_beach.jpg" class="img-fluid " alt="thruster">
                 <p class="main_parrafo"> Un surf moderno y mas competitivo</p>
-                <a href="paginas/productos.html"><button type="button" class="btn btn-danger mt-4"> Comprar</button></a>   
+                <a href="paginas/productos.html"><button id="thrusterButton" type="button" class="btn btn-danger mt-4"> Comprar</button></a>   
             </div>
             <div class="col-md-3  bg-light d-flex flex-column align-items-center p-3  ">
             <!--mid lenght-->
                 <h2 class="main_titulo" >mid lenght</h2>
                 <img src="img/midlenght_sunset.jpg" class="img-fluid " alt="mid lenght">
                 <p class="main_parrafo"> Acaso existe el balance entre lo clasico y lo moderno?</p>
-                <a href="paginas/productos.html"><button type="button" class="btn btn-danger ">Comprar</button></a> 
+                <a href="paginas/productos.html"><button id="midLengthButton" type="button" class="btn btn-danger ">Comprar</button></a> 
             </div>
         </div>
     </div>
@@ -99,8 +99,7 @@
                 <h5 class="modal-title" id="exampleModalLabel">Carrito de Compras</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body" id="modal-bodyCarrito">
-            <p>Modal body text goes here.</p>
+            <div class="modal-body" id="modalBodyCarrito">
             </div>
             <div class="modal-footer"> 
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
