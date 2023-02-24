@@ -1,0 +1,122 @@
+[
+    {
+        "id":"1",
+        "modelo":"sunstone",
+        "largo":"5'2",
+        "precio":500,
+        "tipo":"twin fin",
+        "imagen1":"../img/twin-fins/album sunstone 5.2 (2).jpg",
+        "imagen2":"../img/twin-fins/album sunstone (3).jpg",
+        "imagen3":"../img/twin-fins/album sunstone (4).webp"
+    },
+    {
+        "id":"2",
+        "modelo":"darkness",
+        "largo":"7'3",
+        "precio":750,
+        "tipo":"mid length",
+        "imagen1":"../img/mid-length/darkness.webp",
+        "imagen2":"../img/mid-length/darkness1.webp",
+        "imagen3":"../img/mid-length/darkness2.webp"
+    },
+    {
+        "id":"3",
+        "modelo":"lightbender",
+        "largo":"6'2",
+        "precio":950,
+        "tipo":"twin fin",
+        "imagen1":"../img/twin-fins/lightbender.jpg",
+        "imagen2":"../img/twin-fins/ligh.jpg",
+        "imagen3":"../img/twin-fins/lightbender2.jpg"
+    },
+    {
+        "id":"4",
+        "modelo":"twinsman",
+        "largo":"6'0",
+        "precio":630,
+        "tipo":"twin fin",
+        "imagen1":"../img/twin-fins/twinsman.jpg",
+        "imagen2":"../img/twin-fins/twinsman1.jpg",
+        "imagen3":"../img/twin-fins/twinsman2.jpg"
+    },
+    {
+        "id":"5",
+        "modelo":"bandida",
+        "largo":"5'9",
+        "precio":430,
+        "tipo":"thruster",
+        "imagen1":"../img/thruster/surfboards_Bandida.png",
+        "imagen2":"../img/thruster/boards_Bandida_bottom.png",
+        "imagen3":""
+    },
+    {
+        "id":"6",
+        "modelo":"the medina",
+        "largo":"5'9",
+        "precio":475,
+        "tipo":"thruster",
+        "imagen1":"../img/thruster/Surfboards_TheMedina4.png",
+        "imagen2":"../img/thruster/boards_medina_n4.png",
+        "imagen3":""
+    },
+    {
+        "id":"7",
+        "modelo":"the game",
+        "largo":"5'6",
+        "precio":480,
+        "tipo":"thruster",
+        "imagen1":"../img/thruster/surfboards_cabianca_TheGaMe.png",
+        "imagen2":"../img/thruster/Surfboards_TheGAME.png",
+        "imagen3":""
+    },
+    {
+        "id":"8",
+        "modelo":"stance",
+        "largo":"9'0",
+        "precio":950,
+        "tipo":"single fin",
+        "imagen1":"../img/single-fins/single-fin.png",
+        "imagen2":"../img/single-fins/single-fin2.png",
+        "imagen3":""
+    },
+    {
+        "id":"9",
+        "modelo":"big continental",
+        "largo":"9'4",
+        "precio":1000,
+        "tipo":"single fin",
+        "imagen1":"../img/single-fins/singlefin.png",
+        "imagen2":"../img/single-fins/singlefin2.png",
+        "imagen3":""
+    },
+    {
+        "id":"10",
+        "modelo":"firewire sunday",
+        "largo":"7'3",
+        "precio":1100,
+        "tipo":"mid length",
+        "imagen1":"../img/mid-length/midfire.png",
+        "imagen2":"../img/mid-length/midfire2.png",
+        "imagen3":""
+    },
+    {
+        "id":"11",
+        "modelo":"big continental",
+        "largo":"9'6",
+        "precio":1250,
+        "tipo":"single fin",
+        "imagen1":"../img/single-fins/bingcontinental.png",
+        "imagen2":"../img/single-fins/bingcontinental2.png",
+        "imagen3":""
+    },
+    {
+        "id":"12",
+        "modelo":"channel islands m23",
+        "largo":"6'6",
+        "precio":975,
+        "tipo":"mid length",
+        "imagen1":"../img/mid-length/midlength.png",
+        "imagen2":"../img/mid-length/midlength2.png",
+        "imagen3":""
+    }
+]

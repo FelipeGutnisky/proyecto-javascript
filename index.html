@@ -7,12 +7,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
     <title>CUTBACK | Descubre los diferentes tipos de tablas de surf</title>
+    <!--Toastify-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- iconos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Iconos -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- Favicon -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon"  href="favicon.ico" type="image/x-icon">
+    <!-- CSS -->
     <link rel="stylesheet" href="css/estilos.css" />
     <meta name="description" content="Cual es tu tabla de surf ideal? Descubre los diferentes tipos de tablas de surf, su historia, sus caracteristicas y aprénde un poco mas sobre ellas.">
     <meta name="keywords" content="tablas de surf, twin fin, single fin, thruster, mid lenght, tipos de tablas de surf"> 
@@ -22,51 +26,28 @@
         <!-- NAVBAR COMIEZO -->
         <nav class = "navbar navbar-expand-lg navbar-light bg-white">
             <div class = "container">
-                <a class = "navbar-brand d-flex justify-content-between align-items-center order-lg-0" href = "index.html">
+                <div class="row">
+                    <div class="col-md-4"></div>
+                <a class = "navbar-brand  d-flex justify-content-center align-items-center " href = "index.html">
                     <img src = "img/logo_cutback-removebg-preview.png" alt = "site icon">
                     <span class = "text-uppercase fw-lighter ms-2 color-black">cutback</span>
                 </a>
-                <button class = "navbar-toggler border-0" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navMenu">
-                    <span class = "navbar-toggler-icon"></span>
-                </button>
-            <div class="container-fluid ms-5 ">
-                <div class = "collapse navbar-collapse order-lg-1 ms-5" id = "navMenu">
-                    <ul class = "navbar-nav me-auto mb-2 mb-lg-0 ms-5">
-                        <li class = "nav-item px-2 py-2">
-                            <a class = "nav-link text-uppercase text-dark" href = "index.html">INICIO</a>
-                        </li>
-                        <li class = "nav-item px-2 py-2">
-                            <a class = "nav-link text-uppercase text-dark" href="paginas/productos.html">TABLAS</a>
-                        </li>
-                        <li class = "nav-item px-2 py-2">
-                            <a class = "nav-link text-uppercase text-dark" href = "paginas/contacto.html">CONTACTO</a>
-                        </li>
-                        <li class="nav-item px-2 py-2">
-                            <button type = "button" class = "btn position-relative">
-                                <a id="botonCarrito" data-bs-toggle="modal" data-bs-target="#idModalCarrito"><i class = "fa fa-shopping-cart"></i></a>
-                                <span class = "position-absolute top-0 start-100 translate-middle badge bg-success">0</span>
-                            </button>
-                        </li>
-                        <!-- <li class="nav-item px-2 py-2 ms-3">
-                            <form class="d-flex">
-                                <input id="buscador"class="form-control me-2" placeholder="Buscar Tabla" aria-label="Search">
-                                <button id="btnBuscar" class="btn btn-outline-success">Buscar</button>
-                            </form>
-                        </li>     -->  
-                    </ul>
                 </div>
-            </div>
+                <button class = "navbar-toggler border-0" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navMenu">
+                    <span class = "navbar-toggler-icon "></span>
+                </button>
+                
         </nav>
     </header>
     <main>
-    <div class="container-fluid mt-3 p-3 ">
+    <div class="container- mt-3 p-3 ">
         <div class="row g-3 ">
             <!--twin fin-->
             <div class="col-md-3 bg-light d-flex flex-column align-items-center p-3 ">
                 <h2 class="main_titulo">twin fin</h2>
                 <img src="img/twin_fin.jpg" class="img-fluid"  alt="twin fin">
                 <p class="main_parrafo"> Para muchos una de las formas más auténticas de surfing.</p>
-                <a href="paginas/productos.html" ><button id="twinFinButton" type="button" class="btn btn-danger">Comprar</button></a> 
+                <a href="paginas/productos.html"  ><button id="twinFinButton" type="button" class="btn btn-danger">Comprar</button></a> 
             </div>
             <div class="col-md-3 bg-light d-flex flex-column align-items-center p-3  "> 
             <!-- single fin--> 
@@ -91,6 +72,52 @@
             </div>
         </div>
     </div>
+
+    <!-- COMIEZA MODAL AGREGAR TABLA -->
+    <div class="modal fade" id="idModalAgregarTabla" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Agregar Tabla</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <form id="modalCargarTabla">
+                    <div class="mb-3">
+                        <label for="modelo/marca" class="form-label">Modelo/Marca:</label>
+                        <input type="text" class="form-control" id="modeloInput" aria-describedby="Modelo">
+                    </div>
+                    <div class="mb-3">
+                        <label for="tamaño" class="form-label">Tamaño:</label>
+                        <input type="text" class="form-control" id="tamanioInput" aria-describedby="Tamaño">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Precio en dolares ($USD)</span>
+                        <input id="precioImput" type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                        <span class="input-group-text">.00</span>
+                    </div>
+                    <div class="mb-3">
+                        <select id="selectQuillas" class="form-select form-select-sm"  aria-label=".form-select-sm example">
+                            <option selected>Tipo</option>
+                            <option value="TWIN FIN">Twin Fin</option>
+                            <option value="MID LENGTH">Mid Length</option>
+                            <option value="SINGLE FIN">Single Fin</option>
+                            <option value="THRUSTER">Thruster</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <input type="file" class="form-control" id="subirImagen" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                        <button class="btn btn-outline-secondary" type="button">Cargar Imagen</button>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="text" id="guardarTablaBtn" class="btn btn-success" data-bs-dismiss="modal">Guardar Tabla</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+    </div>
     <!-- COMIENZA MODAL CARRITO -->
     <div class="modal fade" id="idModalCarrito" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -100,6 +127,9 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body" id="modalBodyCarrito">
+            </div>
+            <div class="row ml-ato">
+                <p id="precioTotal"></p>
             </div>
             <div class="modal-footer"> 
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -113,13 +143,20 @@
     <footer class="container-fluid bg-light border-top mt-5">
         <div class="row">
         <div class="col">
-            <p>Desarrolado por: Felipe Gutnisky 2022</p>
+            <p>Desarrolado por: Felipe Gutnisky 2023</p>
         </div>
         </div>  
     
     </footer>
-    <script src="/JS/class.js"></script>
-    <script src="/JS/main.js"></script>   
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!--Script Sweet Alert-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!--Toastify-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <!--Luxon-->
+    <script src="https://cdn.jsdelivr.net/npm/luxon@2.3.0/build/global/luxon.min.js"></script>
+    <!-- Archivos JS propios -->
+    <script src="JS/class.js"></script>
+    <!--Script de Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
